@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "holy-code"
+version = "0.1.0"
+description = ""
+authors = ["Igor-Mozharov <r5@ukr.net>"]
+readme = "README.md"
+packages = [{include = "holy_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+apache-beam = {extras = ["gcp"], version = "^2.52.0"}
+google-cloud-storage = "^2.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
